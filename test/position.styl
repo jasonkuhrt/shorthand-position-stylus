@@ -1,0 +1,71 @@
+
+
+
+
+// @it should support 1up
+
+.foo
+  absolute 1px
+  absolute 1px !important
+
+
+// @expect
+
+.foo {
+  position : absolute;
+  top      : 1px;
+  right    : 1px;
+  bottom   : 1px;
+  left     : 1px;
+  position : absolute;
+  top      : 1px !important;
+  right    : 1px !important;
+  bottom   : 1px !important;
+  left     : 1px !important;
+}
+
+
+
+// @it should support 2up
+
+.foo
+  absolute 1px 2px
+  relative 1px 2px
+  fixed 1px 2px
+
+// @expect
+
+.foo {
+  position : absolute;
+  top      : 1px;
+  right    : 2px;
+  bottom   : 1px;
+  left     : 2px;
+  position : relative;
+  top      : 1px;
+  right    : 2px;
+  bottom   : 1px;
+  left     : 2px;
+  position : fixed;
+  top      : 1px;
+  right    : 2px;
+  bottom   : 1px;
+  left     : 2px;
+}
+
+
+// @it should not risk performance in trying to help users avoid already obviously dumb things, just let it pass through
+
+.foo
+  fixed !important
+
+
+// @expect
+
+.foo {
+  position : fixed;
+  top      : !important;
+  right    : !important;
+  bottom   : !important;
+  left     : !important;
+}
