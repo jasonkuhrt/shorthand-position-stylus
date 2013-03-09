@@ -1,15 +1,18 @@
 {
-  "name": "position-shorthand-stylus",
+  "name": "shorthand-position-stylus",
   "version": "0.1.0",
-  "description": "TODO",
+  "description": "Shorthand syntax for CSS positions",
   "keywords": [
     "Stylus",
     "CSS",
+    "position",
+    "shorthand",
+    "syntax",
     "utility"
   ],
   "repository": {
     "type": "git",
-    "url": "TODO"
+    "url": "git://github.com/jasonkuhrt/shorthand-position-stylus.git"
   },
   "main": "index.js",
   "scripts": {

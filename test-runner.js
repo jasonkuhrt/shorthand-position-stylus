@@ -1,18 +1,11 @@
 
 
 
-
-//  Shorthand Omissions Test Runner
-//  -------------------------------
-
-
 var testRunnerConfig = {
-  describe: 'Position shorthand',
   stylus: {
     use: require('./index')(),
-    import: 'position-shorthand'
-  },
-  mocha: { reporter: 'min' }
+    import: 'shorthand-position'
+  }
 }
 
 require('stylus-test-runner')(testRunnerConfig)
