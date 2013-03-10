@@ -1,6 +1,6 @@
 # shorthand-position-stylus
 
-Permit [clockhand-stylus](https://github.com/jasonkuhrt/clockhand-stylus/blob/master/README.md#stylus-clockhand-shorthand) in CSS positions
+Use CSS positions as properties that support [clockhand-stylus](https://github.com/jasonkuhrt/clockhand-stylus/blob/master/README.md#stylus-clockhand-shorthand) syntax
 
 ### Preview
 ```
